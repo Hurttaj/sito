@@ -1,6 +1,7 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8"/>
     <title>This is the title of the webpage!</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -8,10 +9,24 @@
 <p>Customers taulu: </p>
 <div id="data"></div>
 <br>
-<button id="downloadcustomers">Download customers.csv</div>
-<button id="downloadcompanies">Download companies.csv</div>
-<script src="index.js"></script>
+<button id="downloadcustomers">Download customers.csv</button>
+<button id="downloadcompanies">Download companies.csv</button>
+<br>
+<div>
+<form id="insert", method = 'post'>
+  <label for="firstname">First name:</label><br>
+  <input type="text" id="firstname" name="firstname"><br>
+  <label for="lastname">Last name:</label><br>
+  <input type="text" id="lastname" name="lastname"><br>
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address"><br>
+  <label for="company">Company:</label><br>
+  <input type="text" id="company" name="company"><br>
+  <input type="button" id="insert" value="Submit" onClick='insertdata()'>
+</form>
+</div>
 
+<script src="index.js"></script>
 
 </body>
 </html>

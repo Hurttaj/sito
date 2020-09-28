@@ -1,0 +1,3 @@
+CREATE TABLE companies (company VARCHAR (50) NOT NULL, phonenumber VARCHAR 50 NOT NULL);
+
+CREATE TABLE customers (userid int NOT NULL AUTO_INCREMENT, firstname VARCHAR (50), lastname VARCHAR (50), address VARCHAR (50), company VARCHAR (50) NOT NULL, PRIMARY KEY (userid), FOREIGN KEY (company) REFERENCES companies(company));

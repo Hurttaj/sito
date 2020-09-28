@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var container = document.getElementById("data");
 	for (var i = 0; i < data.length; i++) {
 	var div = document.createElement("div");
-    	div.innerHTML = 'Name: ' + data[i].firstname + ' ' + data[i].lastname + ' Address: '  + data[i].address + ' Company: ' + data[i].company;
+    	div.innerHTML = 'Name: ' + data[i].firstname + ' ' + data[i].lastname + ', Address: '  + data[i].address + ', Company: ' + data[i].company;
 	container.appendChild(div);
   }
 }	

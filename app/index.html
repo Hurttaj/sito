@@ -7,17 +7,12 @@
   <body>
 <p>Customers taulu: </p>
 <div id="data"></div>
-<script>
-$.getJSON("../api/api.php", function( data ) { 
-var container = document.getElementById("data");
-for (var i = 0; i < data.length; i++) {
-var div = document.createElement("div");
-    div.innerHTML = 'Name: ' + data[i].firstname + ' ' + data[i].lastname + ' Address: ' + data[i].address + ' Company: ' + data[i].company;
-	container.appendChild(div);
-  }
-}	
-)
-</script>
+<br>
+<button id="downloadcustomers">Download customers.csv</div>
+<button id="downloadcompanies">Download companies.csv</div>
+<script src="index.js"></script>
+
+
 </body>
 </html>
 
